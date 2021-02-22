@@ -122,7 +122,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="345" height="189"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-Yy-1PE">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-Yy-1PE">
                                                     <rect key="frame" x="0.0" y="0.0" width="345" height="189"/>
                                                 </imageView>
                                             </subviews>
@@ -280,6 +280,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cover" width="1080" height="1350"/>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
