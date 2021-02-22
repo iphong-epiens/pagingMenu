@@ -19,7 +19,6 @@
                         <viewLayoutGuide key="safeArea" id="7x8-S7-ep0"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xmy-3H-xjr"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2267" y="-181"/>
