@@ -1,0 +1,28 @@
+PODS:
+  - Aquaman (0.1.2)
+  - BadgeSwift (8.0.0)
+  - MJRefresh (3.5.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - Aquaman
+  - BadgeSwift
+  - MJRefresh
+  - SnapKit (= 4.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Aquaman
+    - BadgeSwift
+    - MJRefresh
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Aquaman: a9f48d6b1c3049f3e511779a77a570bf541a2470
+  BadgeSwift: a81547ffde1f462bb5fc02e3fa3fdcbc1b888354
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: d00b9561ed5fb746fb05e966870443ddb994e95b
+
+COCOAPODS: 1.10.0

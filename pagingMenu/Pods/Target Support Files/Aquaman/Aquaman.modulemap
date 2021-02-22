@@ -1,0 +1,6 @@
+framework module Aquaman {
+  umbrella header "Aquaman-umbrella.h"
+
+  export *
+  module * { export * }
+}

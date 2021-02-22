@@ -1,0 +1,6 @@
+framework module Pods_pagingMenu {
+  umbrella header "Pods-pagingMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
