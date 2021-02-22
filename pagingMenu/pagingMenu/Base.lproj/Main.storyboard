@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R6N-cL-ZQD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F1q-rb-htl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,119 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="tRZ-g3-L1N">
-            <objects>
-                <navigationController id="R6N-cL-ZQD" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MN0-0Q-6gs">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="GmK-r5-miB" kind="relationship" relationship="rootViewController" id="Im1-Zb-F2x"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3ra-Fi-XWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1000.0000000000001" y="-193.52678571428569"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="XkC-vY-2Rt">
-            <objects>
-                <tableViewController id="GmK-r5-miB" customClass="ViewController" customModule="Aquaman_Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zgz-9C-jYO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <sections>
-                            <tableViewSection id="J61-8I-Iy2">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Vyb-aA-FuN" rowHeight="66" style="IBUITableViewCellStyleDefault" id="Wcq-p5-pDj">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="66"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wcq-p5-pDj" id="6bh-ct-33u">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="66"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Style1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vyb-aA-FuN">
-                                                    <rect key="frame" x="20" y="0.0" width="355" height="66"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="F1q-rb-htl" kind="show" id="AbQ-E6-9lA"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="hwU-w2-kg5" rowHeight="66" style="IBUITableViewCellStyleDefault" id="ztq-VC-VEh">
-                                        <rect key="frame" x="0.0" y="94" width="414" height="66"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ztq-VC-VEh" id="dkX-Fx-KhI">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="66"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Style2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hwU-w2-kg5">
-                                                    <rect key="frame" x="20" y="0.0" width="355" height="66"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="F1q-rb-htl" kind="show" id="Iuc-kw-Tvs"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="GmK-r5-miB" id="GyG-u2-BzS"/>
-                            <outlet property="delegate" destination="GmK-r5-miB" id="xm3-lt-Zib"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="UYK-gW-Ub7"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BKW-Zg-AOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="216.81159420289856" y="-193.66432855001071"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="hbh-Wb-TeL">
-            <objects>
-                <tableViewController id="NMS-K4-hkC" customClass="TableViewController" customModule="Aquaman_Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tiy-dm-wgJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QMf-rg-3e8">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QMf-rg-3e8" id="ReK-E2-gYv">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="NMS-K4-hkC" id="FZf-oT-U0D"/>
-                            <outlet property="delegate" destination="NMS-K4-hkC" id="sux-pk-944"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4uA-2x-MzJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-237" y="529"/>
-        </scene>
         <!--Page View Controller-->
         <scene sceneID="sCS-Za-5tN">
             <objects>
-                <viewController id="F1q-rb-htl" customClass="PageViewController" customModule="Aquaman_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myl-4O-Qfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="F1q-rb-htl" customClass="PageViewController" customModule="pagingMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GIA-X1-Dmc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,14 +21,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="xmy-3H-xjr"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Myl-4O-Qfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1736.2318840579712" y="-193.52678571428569"/>
+            <point key="canvasLocation" x="2267" y="-181"/>
         </scene>
         <!--Superman View Controller-->
         <scene sceneID="Ak7-bc-0d6">
             <objects>
-                <viewController storyboardIdentifier="SupermanViewController" id="AWQ-d9-T9W" customClass="SupermanViewController" customModule="Aquaman_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SupermanViewController" id="AWQ-d9-T9W" customClass="SupermanViewController" customModule="pagingMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YMl-vR-mro">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,17 +60,17 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ru-af-9dO">
-                                <rect key="frame" x="0.0" y="700" width="414" height="196"/>
+                                <rect key="frame" x="0.0" y="856" width="414" height="40"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="Qif-cr-naE"/>
+                                    <constraint firstAttribute="height" constant="40" id="Qif-cr-naE"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXE-XN-blr">
-                                <rect key="frame" x="0.0" y="44" width="414" height="196"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="nfT-K4-5J1"/>
+                                    <constraint firstAttribute="height" constant="50" id="nfT-K4-5J1"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -209,7 +100,7 @@
         <!--Batman View Controller-->
         <scene sceneID="I66-kD-7Qw">
             <objects>
-                <viewController storyboardIdentifier="BatmanViewController" id="sse-FA-tp9" customClass="BatmanViewController" customModule="Aquaman_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BatmanViewController" id="sse-FA-tp9" customClass="BatmanViewController" customModule="pagingMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tFx-Se-0mC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +162,7 @@
         <!--Wonder Woman View Controller-->
         <scene sceneID="LZa-BY-2fh">
             <objects>
-                <viewController storyboardIdentifier="WonderWomanViewController" id="GQT-ZO-chR" customClass="WonderWomanViewController" customModule="Aquaman_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WonderWomanViewController" id="GQT-ZO-chR" customClass="WonderWomanViewController" customModule="pagingMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JhX-Y6-Yhy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +215,7 @@
         <!--The Flash View Controller-->
         <scene sceneID="Q1m-NK-E72">
             <objects>
-                <viewController storyboardIdentifier="TheFlashViewController" id="F1h-q6-UyR" customClass="TheFlashViewController" customModule="Aquaman_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TheFlashViewController" id="F1h-q6-UyR" customClass="TheFlashViewController" customModule="pagingMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4dV-kz-yy9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,13 +279,7 @@
             <point key="canvasLocation" x="6252" y="-181"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Iuc-kw-Tvs"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
