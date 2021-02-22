@@ -52,7 +52,7 @@ let menuSelectedColor = UIColor(red: 230.0 / 255.0, green: 23.0 / 255.0, blue: 8
                 )
             )
         )
-        view.delegate = self
+        //view.delegate = self
         return view
     }()
     
@@ -66,16 +66,8 @@ let menuSelectedColor = UIColor(red: 230.0 / 255.0, green: 23.0 / 255.0, blue: 8
         
         menuView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         //mainScrollView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(updateData))
-        switch indexPath.row {
-        case 0:
-            menuView.titles = ["회원관리", "Q&A", "상품관리", "실시간 판매현황"]
-        case 1:
-            headerView.isHidden = true
-            menuView.isHidden = true
-            //mainScrollView.mj_header?.beginRefreshing()
-        default:
-            break
-        }
+
+        menuView.titles = ["회원관리", "Q&A", "상품관리", "실시간 판매현황"]
         
         let imgView = UIImageView(image: UIImage(named: "cover"))
         imgView.frame = headerView.frame
@@ -99,30 +91,20 @@ let menuSelectedColor = UIColor(red: 230.0 / 255.0, green: 23.0 / 255.0, blue: 8
         
     }
     
-    @objc func updateData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.headerView.isHidden = false
-            self.menuView.isHidden = false
-            self.menuView.titles = ["Superman", "Batman", "Wonder Woman", "The Flash"]
-            self.count = self.menuView.titles.count
-            self.headerViewHeight = 120.0
-            self.menuViewHeight = 44.0
-            self.reloadData()
-//            if self.mainScrollView.mj_header?.isRefreshing ?? false {
-//                self.mainScrollView.mj_header?.endRefreshing()
-//            }
-        }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        switch indexPath.row {
-        case 0:
-            navigationController?.setNavigationBarHidden(true, animated: animated)
-        default:
-            break
-        }
-    }
+//    @objc func updateData() {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+//            self.headerView.isHidden = false
+//            self.menuView.isHidden = false
+//            self.menuView.titles = ["Superman", "Batman", "Wonder Woman", "The Flash"]
+//            self.count = self.menuView.titles.count
+//            self.headerViewHeight = 120.0
+//            self.menuViewHeight = 44.0
+//            self.reloadData()
+////            if self.mainScrollView.mj_header?.isRefreshing ?? false {
+////                self.mainScrollView.mj_header?.endRefreshing()
+////            }
+//        }
+//    }
     
     override func headerViewFor(_ pageController: AquamanPageViewController) -> UIView {
         return headerView
@@ -145,22 +127,8 @@ let menuSelectedColor = UIColor(red: 230.0 / 255.0, green: 23.0 / 255.0, blue: 8
         } else if index == 2 {
             return storyboard.instantiateViewController(withIdentifier: "WonderWomanViewController") as! WonderWomanViewController
         }
-        else if index == 3 {
-            return storyboard.instantiateViewController(withIdentifier: "WonderWomanViewController") as! WonderWomanViewController
-        }else {
+        else {
             return storyboard.instantiateViewController(withIdentifier: "TheFlashViewController") as! TheFlashViewController
-        }
-    }
-    
-    // 默认显示的 ViewController 的 index
-    override func originIndexFor(_ pageController: AquamanPageViewController) -> Int {
-        switch indexPath.row {
-        case 0:
-            return 0
-        case 1:
-            return 1
-        default:
-            return 0
         }
     }
     
@@ -211,23 +179,6 @@ let menuSelectedColor = UIColor(red: 230.0 / 255.0, green: 23.0 / 255.0, blue: 8
             return .zero
         default:
             return .zero
-        }
-    }
-}
-
-
-extension PageViewController: TridentMenuViewDelegate {
-    func menuView(_ menuView: TridentMenuView, didSelectedItemAt index: Int) {
-        guard index < count else {
-            return
-        }
-        switch indexPath.row {
-        case 0:
-            setSelect(index: index, animation: true)
-        case 1:
-            setSelect(index: index, animation: false)
-        default:
-            break
         }
     }
 }
